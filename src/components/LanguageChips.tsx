@@ -1,6 +1,7 @@
-import { clsx } from "clsx"
+import { clsx } from "clsx";
+import type { JSX } from 'react';
 
-export default function LanguageChips({ languages, wrongGuessCount }) {
+export default function LanguageChips({ languages, wrongGuessCount }):JSX.Element {
     const languageElements = languages.map((lang, index) => {
         const isLanguageLost = index < wrongGuessCount
         const styles = {
